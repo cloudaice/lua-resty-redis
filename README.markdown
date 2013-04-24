@@ -438,7 +438,7 @@ It is usually convenient to use the [lua-cjson](http://www.kyne.com.au/~mark/sof
 Limitations
 ===========
 
-* This library cannot be used in code contexts like set_by_lua*, log_by_lua*, and
+* This library cannot be used in code contexts like init_by_lua*, set_by_lua*, log_by_lua*, and
 header_filter_by_lua* where the ngx_lua cosocket API is not available.
 * The `resty.redis` object instance cannot be stored in a Lua variable at the Lua module level,
 because it will then be shared by all the concurrent requests handled by the same nginx
@@ -497,14 +497,14 @@ Please report bugs or submit patches by
 Author
 ======
 
-Yichun "agentzh" Zhang (章亦春) <agentzh@gmail.com>
+Yichun "agentzh" Zhang (章亦春) <agentzh@gmail.com>, CloudFlare Inc.
 
 Copyright and License
 =====================
 
 This module is licensed under the BSD license.
 
-Copyright (C) 2012, by Yichun "agentzh" Zhang (章亦春) <agentzh@gmail.com>.
+Copyright (C) 2012-2013, by Yichun Zhang (agentzh) <agentzh@gmail.com>, CloudFlare Inc.
 
 All rights reserved.
 
